@@ -11,8 +11,12 @@
         background-color: #aebac0;
         font-family: system-ui;
     }
+    .head{
+        border: 2px solid black;
+        
+    }
     .title{
-
+        filter: blur(8px);
         background-image: url("fly.jpg");
         background-size: 100% 300px ;
         background-repeat: no-repeat;
@@ -94,8 +98,10 @@
         
 </style>
 <body>
-    <div class="title">
-
+    <div class="head">
+        <div class="title"></div>
+        <label style="position: absolute;top: 115px;left: 30%;right: 30%; color: white;
+        font-size: 60px; font-family: Georgia, serif;">Arduino Based Drone</label>
     </div>
     <div class="container">
         <div class="picture">
@@ -132,10 +138,11 @@
                         <li>4pcs E88 Propeller</li>
                         <li>MPU 6050 Accelerometer</li>    
                         <li>NRF24L01+ wireless transceiver 2pcs</li>
-                        <li>NRF Adapter Breakout board / Capacitor 100uf 25v</li>                        
+                        <li>NRF Adapter Breakout board / Capacitor 47uf 25v</li>
+                        <li>Resistor, schottky</li>                        
                         <li>TP4056 Charging module</li>
                         <li>3.7 Lipo battery</li>
-                        <li>switch</li>                      
+                        <li>switch</li>                     
                         <li>Joystick 2pcs</li>
                         <li>18650 Rechargeable Battery</li>
                     </ul>
