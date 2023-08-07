@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Arduino Drone</title>
+   <link rel="Website Icon" type="png" href="drone_icon.png">
+</head>
+<style>
+    body{
+        background-color: #f8f9f2;
+        font-family: system-ui;
+    }
+    .head{
+        border: 2px solid #7d6f6f;
+        margin: -7px;
+        
+    }
+    .head label{
+        position: absolute;
+        top: 115px;left: 25%;
+        right: 20%;
+        color: white;
+        font-size: 80px;
+        font-family: Georgia, serif;
+        text-shadow: #000 3px 0 0, #000 3px 0 0, #000 -3px 0 0, #000 -3px 0 0;
+    }
+        .video{
+            object-fit: fill;
+            width: 100%    !important;
+            filter: blur(4px);
+            height: 300px   !important;
+
+        }   
+        .container {
+            max-width: 80%;
+            margin: 20px auto -12px auto;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;       
+            position: relative;
+            display: flex;
+        }
+        .picture {
+            flex: 1;
+            text-align: center;
+        }
+        .picture img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .picture video{
+            max-width: 100%;
+            border-radius: 10px;   
+            margin-bottom: 50px;
+
+        }
+        
+        .description {
+            text-align: justify;
+            margin-bottom:-50px;
+            flex: 1;
+            padding: 40px;
+        }
+        .description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .equipment-list {
+            margin: 30px auto 20px auto;
+            max-width: 450px;
+            border: 2px solid #607D8B;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #dfdfdf;
+            height:fit-content;
+        }
+        table{
+            margin: 20px auto 10px auto;
+            background-color: #a1a1a1;
+            width: 100%;
+         }
+        .equipment-list h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .equipment-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .contactUs{
+            background-color: #403c3a;
+            margin-left: -7px;
+            margin-right: -7px;
+            margin-bottom: -7px;
+            text-align: center;
+            color: white;
+        }
+        .contactUs img{
+            margin: 18px 0px 0px 5px;
+            height: 20px;
+            width: 20px;
+        }
+        .contactUs b{
+            font-size: 30px;
+        }
+        .foot{
+            height: 10px;
+        }
+        @media only screen and (max-width:1500px) {
+        .head label{
+            position: absolute;
+            top: 115px;
+            left: 30%;
+            right: 20%;
+            color: white;
+            font-size: 60px;
+            font-family: Georgia, serif;
+            text-shadow: #000 3px 0 0, #000 3px 0 0, #000 -3px 0 0, #000 -3px 0 0;
+        }
+        @media only screen and (max-width:1300px) {
+        .head label{
+            position: absolute;
+            top: 115px;
+            left: 30%;
+            right: 20%;
+            color: white;
+            font-size: 50px;
+            font-family: Georgia, serif;
+            text-shadow: #000 3px 0 0, #000 3px 0 0, #000 -3px 0 0, #000 -3px 0 0;
+        }
+        }
+        @media only screen and (max-width: 999px){
+            .head label{
+        position: absolute;
+        top: 115px;
+        left: 20%;
+        right: 10%;
+        color: white;
+        font-size: 50px;
+        font-family: Georgia, serif;
+        text-shadow: #000 3px 0 0, #000 3px 0 0, #000 -3px 0 0, #000 -3px 0 0;
+        }
+        .equipment-list {
+            margin: 30px auto 20px auto;
+            max-width: 450px;
+            border: 2px solid #607D8B;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            height:500px;
+        }
+        }
+    }
+</style>
+<body>
+    <div class="head">
+        <video autoplay muted loop class="video">
+            <source src="drone_video.mp4" type="video/mp4">
+        </video>
+        <label>Arduino Based Drone</label>
+    </div>
+    <div class="container">
+        <div class="picture">
+            <img src="controller_drone.png" alt="Example Image">
+        </div>
+        <div class="description">
+            <h2>Arduino Drone and Controller</h2>
+            <p>
+                The Arduino quadcopter drone and controller, which both use the NRF24L01 wireless communication module and Nano board. The drone has an MPU-6050 sensor Inertial Measurement Unit (IMU), which allows for accurate motion sensing and fly stability control. the controller was designed to provide simple and accurate control over the quadcopter drone. It has two joysticks that allow for real-time control of the pitch, roll, yaw, and throttle, giving the piloting experience an effortless feel. This Arduino quadcopter drone configuration is suitable for learners, researchers, and enthusiasts who want to learn more about unmanned aerial vehicles because of its excellent control, stability, and responsiveness.            
+            </p>
+        </div>
+    </div>
+        <div class="container">
+            <div class="description">
+                <h2>How To Used</h2>
+                <p>
+                    With the left joystick dedicated to throttle control, users can seamlessly modulate the speed and power output, mimicking the intricate control found in real-world vehicles. On the other hand, the right joystick takes on the roles of both pitch and roll, enabling users to deftly manipulate the orientation and movement of their virtual craft                </p>
+            </div>
+        <div class="picture">
+            <img src="controller.png" style="width: 60%; height: 300px;"alt="Example Image">
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div class="equipment-list">
+                    <h2>Drone Equipment List:</h2>
+                    <ul>
+                        <li>Arduino Nano Board</li>
+                        <li>4psc E88 Drone Brushed Motor</li>
+                        <li>4pcs E88 Propeller</li>
+                        <li>MPU 6050 Accelerometer</li>    
+                        <li>NRF24L01+ wireless transceiver 2pcs</li>
+                        <li>NRF Adapter Breakout board / Capacitor 47uf 25v</li>
+                        <li>Resistor, schottky</li>                        
+                        <li>TP4056 Charging module</li>
+                        <li>switch</li>                     
+                        <li>Joystick</li>
+                        <li>Battery Supply</li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="equipment-list">
+                    <h2>Step by Step</h2>
+                    <ol type="i">
+                        <li>Assemble the frame</li>
+                        <li>Soldering the motor with the resistor and schottky</li>
+                        <li>Soldering the charging module to the lipo battery</li>
+                        <li>Soldering the MPU 6050, Nrf2401+, charging module, motor to the board</li>
+                        <li>Install the Arduino IDE and program it for drone control</li>
+                        <li>Pair the remote control transmitter with the receiver.</li>
+                        <li>Open the MultiWii Configurator to Setting the PID Values</li>
+                        <li>Calibrate the drone and perform test flights</li>
+                        <li>Refine your drone's performance through code and configurations.</li>
+                    </ol>
+                </div>
+            </td>
+            
+        </tr>
+    </table>
+    <div class="contactUs">
+        <b>Contact Us</b><br>
+        <label for="contact">If you have any questions, please contact us at any moment</label><br>
+           <a href="https://www.instagram.com/junhaoooo_/"><img src="instagram.png"></a>   
+           <a href="https://wa.me/60102036389"><img src="whatsapp.png"></a><br>
+           <label for="">———————————————————</label><br>
+           <label for="">Prepared By LIM JUN HAO</label>
+     </div>
+     <div class="foot"></div>
+</body>
+</html>
